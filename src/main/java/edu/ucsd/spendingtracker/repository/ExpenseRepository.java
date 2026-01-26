@@ -1,30 +1,35 @@
 package edu.ucsd.spendingtracker.repository;
 
 import java.util.List;
-import edu.ucsd.spendingtracker.datasource.InMemoryDataSource;
+
+import edu.ucsd.spendingtracker.datasource.IDataSource;
 import edu.ucsd.spendingtracker.model.Expense;
 
 public class ExpenseRepository {
-    private final InMemoryDataSource dataSource;
+      private IDataSource dataSource;
 
-    public ExpenseRepository(InMemoryDataSource dataSource) {
-        this.dataSource = dataSource;
-    }
+      public ExpenseRepository(IDataSource dataSource) {
+            this.dataSource = dataSource;
+      }
 
-    public void addExpense(Expense expense) {
-        dataSource.addExpense(expense);
-    }
+      public void addExpense(Expense expense) {
+            dataSource.addExpense(expense);
+      }
 
-    public List<Expense> getExpenses() {
-        return dataSource.getExpenses();
-    }
+      public void deleteExpense(Integer id) {
+        dataSource.deleteExpense(id);
+      }
 
-    public double getTotal() {
-        double total = 0;
-        for (Expense expense : dataSource.getExpenses()) {
-            total += expense.getAmount();
-        }
-        return total;
-    }
+      public List<Expense> getExpenses() {
+            return dataSource.getExpenses();
+      }
+
+      public double getTotal() {
+            double total = 0 ;
+            for (Expense expense : dataSource.getExpenses()) {
+                        total += expense.getAmount();
+            }
+            return total;
+      }
 }
 
