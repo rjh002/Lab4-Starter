@@ -1,2 +1,2 @@
-edu/ucsd/spendingtracker/datasource/IDataSource.class
-edu/ucsd/spendingtracker/datasource/SqlDataSource.class
+edu\ucsd\spendingtracker\datasource\SqlDataSource.class
+edu\ucsd\spendingtracker\datasource\IDataSource.class

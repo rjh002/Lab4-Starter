@@ -54,6 +54,7 @@ public class SpendingView extends BorderPane {
     }
 
 
+
     public void addExpenseRow(int id, String name, String catName, String color, double amount) {
         HBox row = new HBox(10);
         row.setPrefSize(450, 40);
@@ -84,7 +85,7 @@ public class SpendingView extends BorderPane {
         listContainer.getChildren().add(row);
     }
 
-
+    //New
     public void showAddExpenseModal(Consumer<Expense> onSave) {
         Stage modal = new Stage();
         modal.initModality(Modality.APPLICATION_MODAL); // Blocks the main window
@@ -121,7 +122,6 @@ public class SpendingView extends BorderPane {
         modal.showAndWait();
     }
 
-
     public Button getSummaryButton() {
         return summaryButton;
     }
@@ -139,5 +139,5 @@ public class SpendingView extends BorderPane {
     public Button getOpenModalButton() {
         return openAddModalBtn;
     }
-
+    
 }
