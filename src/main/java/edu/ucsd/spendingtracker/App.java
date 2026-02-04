@@ -13,6 +13,8 @@ import edu.ucsd.spendingtracker.repository.ExpenseRepository;
 import edu.ucsd.spendingtracker.view.SpendingView;
 import edu.ucsd.spendingtracker.view.SummaryView;
 import edu.ucsd.spendingtracker.view.charts.BarChartProvider;
+import edu.ucsd.spendingtracker.view.charts.IChartProvider;
+import edu.ucsd.spendingtracker.view.charts.PieChartProvider;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
@@ -30,6 +32,7 @@ public class App extends Application {
         //New Lab 5
         List<IChartProvider> chartProviders = new ArrayList<>();
         chartProviders.add(new BarChartProvider());
+        chartProviders.add(new PieChartProvider());
 
         SpendingPresenter listPresenter = new SpendingPresenter(sharedModel, spendingView);
         SummaryPresenter summaryPresenter = new SummaryPresenter(sharedModel, summaryView, chartProviders); //Lab 5 Edit

@@ -22,7 +22,7 @@ public class BarChartProvider implements IChartProvider{
             series.getData().add(new XYChart.Data<>(cat.name(), sum));
         });
 
-        chart.getData().add(series);
+        chart.getData().add(series);     
         for(XYChart.Data<String, Number> entry : series.getData()){
             String color = Category.valueOf(entry.getXValue()).color;
             Node bar = entry.getNode();

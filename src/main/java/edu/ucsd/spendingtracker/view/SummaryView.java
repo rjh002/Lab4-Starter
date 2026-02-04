@@ -48,7 +48,14 @@ public class SummaryView extends VBox {
 
         backButton.setStyle("-fx-background-color: #757575; -fx-text-fill: white;");
 
-        this.getChildren().addAll(title, totalLabel, new Label("View Mode:"), chartSelector, chartContainer, backButton);
+        this.getChildren().addAll(
+            title, 
+            totalLabel, 
+            new Label("View Mode:"), 
+            chartSelector, 
+            chartContainer, 
+            backButton);
+
         //this.getChildren().addAll(title, totalLabel, backButton);
     }
 
@@ -69,7 +76,7 @@ public class SummaryView extends VBox {
     }
 
     //Lab 5 Addition
-    public ComboBox<IChartProvider> getChartSeletor(){
+    public ComboBox<IChartProvider> getChartSelector(){
         return chartSelector;
     }
 }

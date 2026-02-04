@@ -2,6 +2,7 @@ package edu.ucsd.spendingtracker.presenter;
 
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 import edu.ucsd.spendingtracker.model.Category;
 import edu.ucsd.spendingtracker.model.Expense;
@@ -20,10 +21,10 @@ public class SummaryPresenter extends AbstractPresenter<SummaryView> {
         super(model, view);
         //Lab 5 Additions
         this.chartProviders = chartProviders;
-        this.view.getChartSeletor().getItems().addAll(this.chartProviders);
+        this.view.getChartSelector().getItems().addAll(this.chartProviders);
 
         if (!this.chartProviders.isEmpty()){
-            this.view.getChartSeletor().setValue(this.chartProviders.get(0));
+            this.view.getChartSelector().setValue(this.chartProviders.get(0));
         }
 
         this.view.getBackButton().setOnAction(e -> {
@@ -31,12 +32,7 @@ public class SummaryPresenter extends AbstractPresenter<SummaryView> {
                 onBack.run();
         });
         //UpdateView instead of Refresh
-        this.view.getChartSeletor().setOnAction(e -> updateView());
-
-        this.view.getBackButton().setOnAction(e -> {
-            if (onBack != null)
-                onBack.run();
-        });
+        this.view.getChartSelector().setOnAction(e -> updateView());
     }
 
     public void setOnBack(Runnable action) {
@@ -62,7 +58,7 @@ public class SummaryPresenter extends AbstractPresenter<SummaryView> {
 
         view.setTotal(model.getTotalSpending());
 
-        IChartProvider selectedProvider = view.getChartSeletor().getValue();
+        IChartProvider selectedProvider = view.getChartSelector().getValue();
 
         if (selectedProvider != null){
             Node chartNode = selectedProvider.createChart(totals);
@@ -71,15 +67,16 @@ public class SummaryPresenter extends AbstractPresenter<SummaryView> {
 
     }
 
-    /*
-    @Override
-    public void updateView() {
-        view.setTotal(model.getTotalSpending());
-    }
-    */
+    
+    //@Override
+    //public void updateView() {
+    //    view.setTotal(model.getTotalSpending());
+    //}
+    
 
     @Override
     public String getViewTitle() {
         return "Summary";
     }
+
 }

@@ -1,16 +1,18 @@
-c:\Users\diego_hriogpc\Downloads\UCSD Downloads\Senior Year 2025-2026\Winter Quarter\CSE 110\Lab4-Starter\src\main\java\edu\ucsd\spendingtracker\presenter\SpendingPresenter.java
-c:\Users\diego_hriogpc\Downloads\UCSD Downloads\Senior Year 2025-2026\Winter Quarter\CSE 110\Lab4-Starter\src\main\java\edu\ucsd\spendingtracker\App.java
-c:\Users\diego_hriogpc\Downloads\UCSD Downloads\Senior Year 2025-2026\Winter Quarter\CSE 110\Lab4-Starter\src\main\java\edu\ucsd\spendingtracker\presenter\AbstractPresenter.java
-c:\Users\diego_hriogpc\Downloads\UCSD Downloads\Senior Year 2025-2026\Winter Quarter\CSE 110\Lab4-Starter\src\main\java\edu\ucsd\spendingtracker\model\Category.java
-c:\Users\diego_hriogpc\Downloads\UCSD Downloads\Senior Year 2025-2026\Winter Quarter\CSE 110\Lab4-Starter\src\main\java\edu\ucsd\spendingtracker\model\Model.java
-c:\Users\diego_hriogpc\Downloads\UCSD Downloads\Senior Year 2025-2026\Winter Quarter\CSE 110\Lab4-Starter\src\main\java\edu\ucsd\spendingtracker\model\Expense.java
-c:\Users\diego_hriogpc\Downloads\UCSD Downloads\Senior Year 2025-2026\Winter Quarter\CSE 110\Lab4-Starter\src\main\java\edu\ucsd\spendingtracker\repository\ExpenseRepository.java
-c:\Users\diego_hriogpc\Downloads\UCSD Downloads\Senior Year 2025-2026\Winter Quarter\CSE 110\Lab4-Starter\src\main\java\module-info.java
-c:\Users\diego_hriogpc\Downloads\UCSD Downloads\Senior Year 2025-2026\Winter Quarter\CSE 110\Lab4-Starter\src\main\java\edu\ucsd\spendingtracker\datasource\IDataSource.java
-c:\Users\diego_hriogpc\Downloads\UCSD Downloads\Senior Year 2025-2026\Winter Quarter\CSE 110\Lab4-Starter\src\main\java\edu\ucsd\spendingtracker\datasource\InMemoryDataSource.java
-c:\Users\diego_hriogpc\Downloads\UCSD Downloads\Senior Year 2025-2026\Winter Quarter\CSE 110\Lab4-Starter\src\main\java\edu\ucsd\spendingtracker\view\SummaryView.java
-c:\Users\diego_hriogpc\Downloads\UCSD Downloads\Senior Year 2025-2026\Winter Quarter\CSE 110\Lab4-Starter\src\main\java\edu\ucsd\spendingtracker\presenter\SummaryPresenter.java
-c:\Users\diego_hriogpc\Downloads\UCSD Downloads\Senior Year 2025-2026\Winter Quarter\CSE 110\Lab4-Starter\src\main\java\edu\ucsd\spendingtracker\presenter\PresenterManager.java
-c:\Users\diego_hriogpc\Downloads\UCSD Downloads\Senior Year 2025-2026\Winter Quarter\CSE 110\Lab4-Starter\src\main\java\edu\ucsd\spendingtracker\presenter\PresenterSwitcher.java
-c:\Users\diego_hriogpc\Downloads\UCSD Downloads\Senior Year 2025-2026\Winter Quarter\CSE 110\Lab4-Starter\src\main\java\edu\ucsd\spendingtracker\datasource\SqlDataSource.java
-c:\Users\diego_hriogpc\Downloads\UCSD Downloads\Senior Year 2025-2026\Winter Quarter\CSE 110\Lab4-Starter\src\main\java\edu\ucsd\spendingtracker\view\SpendingView.java
+/Users/RicardoHernandez/Lab4-Starter/src/main/java/edu/ucsd/spendingtracker/presenter/PresenterSwitcher.java
+/Users/RicardoHernandez/Lab4-Starter/src/main/java/edu/ucsd/spendingtracker/presenter/SpendingPresenter.java
+/Users/RicardoHernandez/Lab4-Starter/src/main/java/module-info.java
+/Users/RicardoHernandez/Lab4-Starter/src/main/java/edu/ucsd/spendingtracker/model/Expense.java
+/Users/RicardoHernandez/Lab4-Starter/src/main/java/edu/ucsd/spendingtracker/presenter/SummaryPresenter.java
+/Users/RicardoHernandez/Lab4-Starter/src/main/java/edu/ucsd/spendingtracker/presenter/PresenterManager.java
+/Users/RicardoHernandez/Lab4-Starter/src/main/java/edu/ucsd/spendingtracker/view/SummaryView.java
+/Users/RicardoHernandez/Lab4-Starter/src/main/java/edu/ucsd/spendingtracker/model/Model.java
+/Users/RicardoHernandez/Lab4-Starter/src/main/java/edu/ucsd/spendingtracker/view/charts/BarChartProvider.java
+/Users/RicardoHernandez/Lab4-Starter/src/main/java/edu/ucsd/spendingtracker/datasource/InMemoryDataSource.java
+/Users/RicardoHernandez/Lab4-Starter/src/main/java/edu/ucsd/spendingtracker/presenter/AbstractPresenter.java
+/Users/RicardoHernandez/Lab4-Starter/src/main/java/edu/ucsd/spendingtracker/App.java
+/Users/RicardoHernandez/Lab4-Starter/src/main/java/edu/ucsd/spendingtracker/view/charts/IChartProvider.java
+/Users/RicardoHernandez/Lab4-Starter/src/main/java/edu/ucsd/spendingtracker/model/Category.java
+/Users/RicardoHernandez/Lab4-Starter/src/main/java/edu/ucsd/spendingtracker/view/SpendingView.java
+/Users/RicardoHernandez/Lab4-Starter/src/main/java/edu/ucsd/spendingtracker/datasource/SqlDataSource.java
+/Users/RicardoHernandez/Lab4-Starter/src/main/java/edu/ucsd/spendingtracker/repository/ExpenseRepository.java
+/Users/RicardoHernandez/Lab4-Starter/src/main/java/edu/ucsd/spendingtracker/datasource/IDataSource.java
